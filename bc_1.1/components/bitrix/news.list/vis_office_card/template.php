@@ -14,6 +14,7 @@ $this->setFrameMode(true);
 ?>
 
 <div class="similar">
+    <div class="similar-container">
 
     <div class="similar-title"><?=$arParams["COMPONENT_TITLE"]?></div>
     <div class="similar-row">
@@ -48,10 +49,10 @@ $this->setFrameMode(true);
     </div>
     <?if($arParams["SHOW_BOTTOM_LINK"] == "Y"):?>
 
-    <a href="/arenda/" class="info-btn">Все офисы</a>
+    <button class="info-btn"><a href="/arenda/" > Все офисы</a> </button>
 
     <?endif;?>
 
 
     </div>
-
+</div>

@@ -8,15 +8,14 @@ mixin history(date, title, text, img_url)
         .history-grid-container
             .img(style = attributes.style)
 
-
 mixin history-reverse(date, title, text, img_url)
     .history-grid-date=date
     .history-grid-row
-        .history-grid-container.history-grid-left_line
+        .history-grid-container
             .history-grid-info
                 .title=title
                 .text=text
-        .history-grid-container
+        .history-grid-container.history-grid-left_line
             .img(style = attributes.style)
 
 
@@ -26,11 +25,11 @@ mixin history-reverse(date, title, text, img_url)
     .history-subtitle Бизнес-центр «Новослободский» – это бывшая типография «Красный пролетарий», которая была издателем Иваном Кушнарёвым. 
     .history-grid 
         .history-grid-top
-        +history("1869", "Новая типография",'Сын небогатого помещика, статский советник Иван Николаевич Кушнерев, издававший  в Петербурге журнал "Грамотей" и ежемесячную "Народную газету", перебравшись в Москву, основал новую типографию.')(style= "background: url(./img/history/1.jpg) no-repeat center/cover")
-        +history-reverse("1884", "Каменное здание",'Рядом с деревянным домом на Пименовской улице появляется каменное здание в два этажа с шатровой крышей.')(style= "background: url(./img/history/2.jpg) no-repeat center/cover")
-        +history("1888", "Вдвое больше",'Здание типографии вырастает более чем вдвое. К нему пристраивается новая часть вдоль переулка, и, кроме того, все здание вырастает на целый этаж.')(style= "background: url(./img/history/3.jpg) no-repeat center/cover")
-        +history-reverse("1905-1914", "Вдвое Выше",'Архитектор Ф.Ф.Воскресенский достраивал и перестраивал типографию  за годы здание  выросло до 6 этажей.')(style= "background: url(./img/history/4.jpg) no-repeat center/cover")
-        +history("2007", "Офисный центр",'Производство было остановлено, здания отремонтированы и перепрофилированы в комфортабельный офисный центр.')(style= "background: url(./img/history/5.jpg) no-repeat center/cover")
-        .history-grid-date 2021
+        +history-reverse("1869", "Новая типография",'Сын небогатого помещика, статский советник Иван Николаевич Кушнерев, издававший  в Петербурге журнал "Грамотей" и ежемесячную "Народную газету", перебравшись в Москву, основал новую типографию.')(style= "background: url(./img/history/1.jpg) no-repeat center/cover")
+        +history("1884", "Каменное здание",'Рядом с деревянным домом на Пименовской улице появляется каменное здание в два этажа с шатровой крышей.')(style= "background: url(./img/history/2.jpg) no-repeat center/cover")
+        +history-reverse("1888", "Вдвое больше",'Здание типографии вырастает более чем вдвое. К нему пристраивается новая часть вдоль переулка, и, кроме того, все здание вырастает на целый этаж.')(style= "background: url(./img/history/3.jpg) no-repeat center/cover")
+        +history("1905-1914", "Вдвое Выше",'Архитектор Ф.Ф.Воскресенский достраивал и перестраивал типографию  за годы здание  выросло до 6 этажей.')(style= "background: url(./img/history/4.jpg) no-repeat center/cover")
+        +history-reverse("2007", "Офисный центр",'Производство было остановлено, здания отремонтированы и перепрофилированы в комфортабельный офисный центр.')(style= "background: url(./img/history/5.jpg) no-repeat center/cover")
+        .history-grid-date.history-grid-date--final 2021
         a.info-btn 
             span Арендовать офис

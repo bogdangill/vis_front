@@ -5,8 +5,7 @@
     min-height: var(--container-height);
     position: relative;
     color:white;
-    .flex-col;
-    
+    .flex-col;   
     
     display: grid;
     grid-template-rows: 1fr  58px;
@@ -37,12 +36,14 @@
         //  position: absolute;
         //  .adaptive-size(200,355,1200, 1920);
         //  top:var(--return);
-         width:max-content;
-         align-self: center;
-         justify-self: center;
+        width:max-content;
+        align-self: center;
+        justify-self: center;
+        position: relative;
+        top: 2em;
          
          @media screen and (max-width:@size-tablete){
-             position: relative;
+             
              top: 0;
          }
          
@@ -50,7 +51,7 @@
          
          &-title{
              .f-size(30,72,1200,1920);
-            
+            font-weight:700;
             text-transform: uppercase;
             margin-bottom: .6em;
             line-height: 1.2em;

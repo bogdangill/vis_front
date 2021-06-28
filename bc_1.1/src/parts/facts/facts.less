@@ -7,19 +7,15 @@
     align-content: center;
     justify-content: center;
     align-items: center;
-    justify-items: center;  
-    
-   
-    
-
+    justify-items: center; 
     .flex-row;
-    overflow-x: hidden;
+    // overflow-x: hidden;
     justify-content: space-around;
     
     &-bg_text {
         .f-size(100,200,320,1920);
         position   : absolute;
-        top: -.1em;
+        top: -.07em;
         left: 0.1em;
         font-weight: bold;        
         line-height: 245px;
@@ -29,15 +25,7 @@
         
     }
     
-    &--reverse{
-        background-color: white;
-        
-        &  .facts-bg_text{
-            color: #F6F7F8;
-            
-            left:45%;
-        }
-    }
+   
     
     &-text{
         max-width: 592px;
@@ -62,5 +50,21 @@
     &-img{
         width: 24vw;
         position: relative;
+    }
+    
+    
+    &--reverse{
+        background-color: white;
+        padding-bottom: 133px;
+        
+        &  .facts-bg_text{
+            color: #F6F7F8;
+            
+            left:45%;
+        }
+        
+        &  .facts-img {
+            width: 29.5vw;
+        }
     }
 }

@@ -1,9 +1,9 @@
 .history{
     position: relative;
     .padding-container(1925px, 1726px, 77px, 5vw, 65px, 5vw);
-    margin-bottom: @section-gap;
+    
     background-color: #EDEFF1;
-    overflow: hidden;
+    //overflow: hidden;
     
     
     
@@ -57,6 +57,7 @@
         &-row{
             .flex-row;
             width: 100%;
+            
           &--reverse{
             flex-direction: row-reverse;
           }
@@ -81,8 +82,9 @@
         
         & .info-btn{
             grid-column: span 2;
-            margin-top: 56px;
+            margin-top: 36px;
             .flex-col;
+            width: 350px ;
             
             justify-content: center;
             
@@ -145,14 +147,37 @@
             justify-self: center;
             font-weight: bold;
             font-size: 24px;
-            line-height: 29px;
+            line-height: 1.9em;
+            margin-bottom: 0.6em;
             text-align: center;
             text-transform: uppercase;
             height: 29px;
             color: @medium_gray;
             
+            
+            
+            
+            &--final::after{
+                content: ".";
+                display: block;
+                color: transparent;
+                width: 12px;
+                height: 12px;
+                background-color: @gray_lines; 
+                border-radius: 50%;
+                top: -160%;
+                left: calc(50% - 5px);
+                position: relative;               
+                
+            }
+            
             &.history-blue{
                 color: @blue;
+            }
+            
+            
+            &--final.history-blue::after{
+                background-color: @blue;
             }
         }
         
@@ -160,7 +185,7 @@
             text-align: right;
             font-size: 20px;
             
-            max-width: 367px;
+            max-width: 377px;
                 min-height: 208px;
                 align-self: center;
                 justify-self: center;
@@ -190,6 +215,7 @@
             padding-bottom: 40px;
             width:50%;
             order:1;
+            min-height: 302px;
             
                     
             & .img{

@@ -116,8 +116,7 @@
             & .text{               
                 
                 & b{                    
-                    .f-size(25,96,320,1024);
-                    
+                    .font-size-super(40,60,96,96, "super" ,320,375,1024);                    
                     line-height: 1em;                   
                     color:#0055FF;
                 }
@@ -127,6 +126,12 @@
                 font-size: 20px;
                 text-transform: uppercase;
                 font-weight: 700;
+                
+                @media screen and(max-width: @size-mobile) {
+                    font-size: 16px;
+                
+                font-weight: 400;
+                }
             }
             
             
